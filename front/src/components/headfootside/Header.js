@@ -5,10 +5,10 @@ import QuizModal from '../dailyQuiz/QuizModal';
 function Header() {
 
   const [isQuizModalOpen, setIsQuizModalOpen] = useState(false); // 모달 상태 추가
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 여부   
 
   // 각 메뉴에 대한 하위 메뉴 표시 여부를 관리하는 상태 변수
   const [activeMenu, setActiveMenu] = useState(null);
-
   // 마우스가 메뉴 위에 올라가면 하위 메뉴를 표시
   const handleMouseEnter = (menu) => {
     setActiveMenu(menu);
